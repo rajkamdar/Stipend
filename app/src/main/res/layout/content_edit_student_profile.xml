@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_edit_student_profile"
+    tools:context="app.stipend.EditStudentProfile"
+    android:id="@+id/editstudent">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="PERSONAL DETAILS"
+                android:id="@+id/edit_pdetails"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:textColor="#838B8B" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edit_fname"
+                android:layout_below="@+id/edit_pdetails"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:hint="Name"
+                android:textColor="#838B8B" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_id"
+                android:textSize="22dp"
+                android:layout_below="@+id/edit_fname"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Email Id"
+                android:textColor="#838B8B" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/edit_pwd"
+                android:layout_below="@+id/edit_id"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Password"
+                android:textColor="#838B8B" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edit_mno"
+                android:layout_below="@+id/edit_pwd"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Mobile Number"
+                android:textColor="#838B8B" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/edit_edetails"
+                android:hint="Education Details"
+                android:text="EDUCATION DETAILS"
+                android:textColor="#838B8B"
+                android:layout_below="@+id/edit_mno"
+                android:layout_alignRight="@+id/edit_pdetails"
+                android:layout_alignEnd="@+id/edit_pdetails" />
+
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_field"
+                android:textColor="#838B8B"
+                android:hint="Field"
+                android:foregroundTint="#838B8B"
+                android:foregroundTintMode="screen"
+                android:layout_toEndOf="@+id/field"
+
+                android:layout_toRightOf="@+id/field"
+                android:layout_below="@+id/edit_edetails"
+                />
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_year"
+                android:textColor="#838B8B"
+                android:hint="Year"
+                android:foregroundTint="#838B8B"
+                android:layout_below="@+id/edit_field"
+                android:layout_toRightOf="@+id/year"
+                android:layout_toEndOf="@+id/year"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edit_ten"
+                android:layout_below="@+id/edit_year"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="10th Grade"
+                android:textColor="#838B8B" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edit_twelve"
+                android:layout_below="@+id/edit_ten"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="12th Grade"
+                android:textColor="#838B8B" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edit_clgmarks"
+                android:layout_below="@+id/edit_twelve"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="College Grade"
+                android:textColor="#838B8B" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/edit_studentdescription"
+                android:layout_below="@+id/edit_clgmarks"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Enter details about yourself"
+                android:textColor="#838B8B"
+                android:lines="4" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:id="@+id/upd"
+                android:layout_below="@+id/edit_studentdescription"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:background="#4167d1" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_edit"
+                android:layout_above="@+id/edit_studentdescription"
+                android:layout_toRightOf="@+id/edit_clgmarks"
+                android:layout_toEndOf="@+id/edit_clgmarks"
+                android:textColor="#838B8B"
+                android:hint="Marks"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Field"
+                android:id="@+id/field"
+                android:layout_above="@+id/edit_year"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#838B8B"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Year"
+                android:id="@+id/year"
+                android:layout_above="@+id/edit_ten"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#838B8B"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

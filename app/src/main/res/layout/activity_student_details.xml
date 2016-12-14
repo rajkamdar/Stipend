@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.stipend.StudentDetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/pdetails"
+                android:hint="Personal Details"
+                android:text="PERSONAL DETAILS"
+                android:textSize="25dp"
+                android:textColor="#00868B"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/emailid"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Email Id"
+                android:layout_below="@+id/pdetails"
+                android:textColor="#00868B"
+                android:layout_marginTop="20dp"
+                android:text="Email Id:"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/mno"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Mobile Number"
+                android:layout_below="@+id/emailid"
+                android:textColor="#00868B"
+                android:text="Mobile Number:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/edetails"
+                android:hint="Education Details"
+                android:text="EDUCATION DETAILS"
+                android:textSize="25dp"
+                android:textColor="#00868B"
+                android:layout_below="@+id/mno"
+                android:layout_alignRight="@+id/pdetails"
+                android:layout_alignEnd="@+id/pdetails"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/field"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Field"
+                android:layout_below="@+id/edetails"
+                android:textColor="#00868B"
+                android:text="Field:"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/year"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Year"
+                android:layout_below="@+id/field"
+                android:textColor="#00868B"
+                android:text="Year:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/sscmarks"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="10th Grade"
+                android:layout_below="@+id/year"
+                android:textColor="#00868B"
+                android:text="10th Grade:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/hscmarks"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="12th Grade"
+                android:layout_below="@+id/sscmarks"
+                android:textColor="#00868B"
+                android:text="12th Grade:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/clgmarks"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="College Grade"
+                android:layout_below="@+id/hscmarks"
+                android:textColor="#00868B"
+                android:text="College Grade:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/desc"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/clgmarks"
+                android:textColor="#00868B"
+                android:text="Details of student:"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/email1"
+                android:textColor="#838B8B"
+                android:textSize="20dp"
+                android:text="Email"
+                android:layout_above="@+id/mno"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/emailid"
+                android:layout_alignLeft="@+id/mno1"
+                android:layout_alignStart="@+id/mno1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/mno1"
+                android:textColor="#838B8B"
+                android:textSize="20dp"
+                android:text="mno"
+                android:layout_above="@+id/edetails"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/mno"
+                android:layout_alignLeft="@+id/field1"
+                android:layout_alignStart="@+id/field1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/field1"
+                android:textColor="#838B8B"
+                android:textSize="20dp"
+                android:text="field"
+                android:layout_alignTop="@+id/field"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/year1"
+                android:textColor="#838B8B"
+                android:textSize="20dp"
+                android:text="year"
+                android:layout_above="@+id/sscmarks"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/year"
+                android:layout_alignLeft="@+id/field1"
+                android:layout_alignStart="@+id/field1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="twelveth"
+                android:id="@+id/twelve1"
+                android:textColor="#838B8B"
+                android:textSize="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/hscmarks"
+                android:layout_alignLeft="@+id/year1"
+                android:layout_alignStart="@+id/year1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/ten1"
+                android:textColor="#838B8B"
+                android:textSize="20dp"
+                android:text="tenth"
+                android:layout_alignRight="@+id/twelve1"
+                android:layout_alignEnd="@+id/twelve1"
+                android:layout_alignTop="@+id/sscmarks"
+                android:layout_alignLeft="@+id/year1"
+                android:layout_alignStart="@+id/year1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/clgmarks1"
+                android:textColor="#838B8B"
+                android:textSize="20dp"
+                android:text="clgmarks"
+                android:layout_above="@+id/desc"
+                android:layout_alignRight="@+id/twelve1"
+                android:layout_alignEnd="@+id/twelve1"
+                android:layout_alignTop="@+id/clgmarks"
+                android:layout_alignLeft="@+id/twelve1"
+                android:layout_alignStart="@+id/twelve1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/detail1"
+                android:layout_marginBottom="63dp"
+                android:layout_below="@+id/desc"
+                android:textColor="#838B8B"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="raj9235@gmail.com"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTACT"
+                android:id="@+id/contact"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:background="#00868B"
+                android:layout_below="@+id/detail1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

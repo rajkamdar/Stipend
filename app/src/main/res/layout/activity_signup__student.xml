@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="app.stipend.Signup_Student"
+    android:id="@+id/signupstudents">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="PERSONAL DETAILS"
+            android:id="@+id/signup_pdetails"
+            android:textColor="#838B8B"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/signup_fname"
+            android:layout_below="@+id/signup_pdetails"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:hint="First Name"
+            android:textColor="#838B8B" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/signup_lname"
+            android:layout_below="@+id/signup_fname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Last Name"
+            android:textColor="#838B8B" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/signup_id"
+            android:layout_below="@+id/signup_lname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Email Id"
+            android:textColor="#838B8B" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/signup_pwd"
+            android:layout_below="@+id/signup_id"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Password"
+            android:textColor="#838B8B" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/signup_mno"
+            android:layout_below="@+id/signup_pwd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Mobile Number"
+            android:textColor="#838B8B" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/signup_edetails"
+                android:hint="Education Details"
+            android:text="EDUCATION DETAILS"
+                android:textColor="#838B8B"
+                android:layout_below="@+id/signup_mno"
+                android:layout_alignRight="@+id/signup_pdetails"
+                android:layout_alignEnd="@+id/signup_pdetails" />
+
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_field"
+                android:textColor="#838B8B"
+                android:hint="Field"
+                android:foregroundTint="#838B8B"
+                android:foregroundTintMode="screen"
+
+                android:layout_below="@+id/signup_edetails"
+                android:layout_alignLeft="@+id/signup_pdetails"
+                android:layout_alignStart="@+id/signup_pdetails" />
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_year"
+                android:textColor="#838B8B"
+                android:hint="Year"
+                android:foregroundTint="#838B8B"
+
+                android:layout_below="@+id/signup_field"
+                android:layout_alignLeft="@+id/signup_edetails"
+                android:layout_alignStart="@+id/signup_edetails" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/signup_ten"
+            android:layout_below="@+id/signup_year"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="10th Grade"
+            android:textColor="#838B8B" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/signup_twelve"
+            android:layout_below="@+id/signup_ten"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="12th Grade"
+            android:textColor="#838B8B" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/signup_clgmarks"
+            android:layout_below="@+id/signup_twelve"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="College Grade"
+            android:textColor="#838B8B" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/signup_studentdescription"
+            android:layout_below="@+id/signup_clgmarks"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Enter details about yourself"
+            android:textColor="#838B8B"
+            android:lines="4" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:id="@+id/register"
+                android:layout_below="@+id/signup_studentdescription"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:background="#4167d1" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner2"
+                android:layout_above="@+id/signup_studentdescription"
+                android:layout_toRightOf="@+id/signup_clgmarks"
+                android:layout_toEndOf="@+id/signup_clgmarks"
+                android:textColor="#838B8B"
+                android:hint="Marks"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Field"
+                android:id="@+id/field"
+                android:layout_above="@+id/signup_year"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#838B8B"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Year"
+                android:id="@+id/year"
+                android:layout_above="@+id/signup_ten"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#838B8B"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

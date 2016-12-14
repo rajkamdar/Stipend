@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.stipend.AddInternship"
+    android:id="@+id/add">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="INTERNSHIP DETAILS"
+                android:id="@+id/idetails"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#00868B"
+                android:textSize="25dp"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/post"
+                android:hint="Post"
+                android:textColor="#838B8B"
+                android:layout_below="@+id/idetails"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/stipend"
+                android:layout_below="@+id/post"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Stipend"
+                android:textColor="#838B8B"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/duration"
+                android:layout_below="@+id/stipend"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Duration(in months)"
+                android:textColor="#838B8B" />
+
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/city"
+                android:textColor="#838B8B"
+                android:hint="Field"
+                android:foregroundTint="#838B8B"
+                android:foregroundTintMode="screen"
+
+                android:layout_below="@+id/duration"
+                />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/ifield"
+                android:layout_below="@+id/city"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Internship Field"
+                android:textColor="#838B8B" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/aboutinternship"
+                android:layout_below="@+id/ifield"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="About Internship"
+                android:textColor="#838B8B"
+                android:lines="3" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:id="@+id/register"
+                android:layout_below="@+id/aboutinternship"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:background="#00868B"
+                android:layout_marginTop="20dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
